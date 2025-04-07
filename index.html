@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pucallpa Tenis Club | Club de Tenis Profesional</title>
+    <meta name="description" content="Únete al mejor club de tenis de Pucallpa. Canchas profesionales, entrenadores calificados y torneos emocionantes.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tennis-green': '#5bdb05',
+                        'tennis-green-dark': '#5bdb05',
+                        'tennis-blue': '#1E3A8A',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-tennis-green flex items-center">
+                    <i class="fas fa-tennis-ball mr-2"></i>
+                    <span>Pucallpa Tenis Club</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio" class="text-gray-800 hover:text-tennis-green font-medium">Inicio</a>
+                    <a href="#instalaciones" class="text-gray-800 hover:text-tennis-green font-medium">Instalaciones</a>
+                    <a href="#torneos" class="text-gray-800 hover:text-tennis-green font-medium">Torneos</a>
+                    <a href="#entrenadores" class="text-gray-800 hover:text-tennis-green font-medium">Entrenadores</a>
+                    <a href="#contacto" class="text-gray-800 hover:text-tennis-green font-medium">Contacto</a>
+                    <a href="#membresias" class="bg-tennis-green text-white px-4 py-2 rounded-lg hover:bg-tennis-green-dark transition">Membresías</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars text-gray-800 text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <a href="#inicio" class="block py-2 text-gray-800 hover:text-tennis-green">Inicio</a>
+                <a href="#instalaciones" class="block py-2 text-gray-800 hover:text-tennis-green">Instalaciones</a>
+                <a href="#torneos" class="block py-2 text-gray-800 hover:text-tennis-green">Torneos</a>
+                <a href="#entrenadores" class="block py-2 text-gray-800 hover:text-tennis-green">Entrenadores</a>
+                <a href="#contacto" class="block py-2 text-gray-800 hover:text-tennis-green">Contacto</a>
+                <a href="#membresias" class="block mt-2 bg-tennis-green text-white px-4 py-2 rounded-lg hover:bg-tennis-green-dark transition text-center">Membresías</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Mejorado -->
+<section id="inicio" class="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
+    <!-- Video de fondo (alternativa a imagen) -->
+    <video autoplay muted loop playsinline class="absolute z-0 w-full h-full object-cover">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-tennis-training-1231-large.mp4" type="video/mp4">
+      <!-- Fallback a imagen si el video no carga -->
+      <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cancha de tenis" class="absolute w-full h-full object-cover">
+    </video>
+    
+    <!-- Overlay con gradiente -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/20 z-1"></div>
+    
+    <!-- Contenido principal -->
+    <div class="container mx-auto px-6 relative z-10 text-center">
+      <div class="animate-fade-in">
+
+        
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up">
+          <span class="text-tennis-green">Pucallpa</span> Tenis Club
+        </h1>
+        
+        <p class="text-xl md:text-2xl lg:text-3xl mb-8 max-w-3xl mx-auto leading-relaxed animate-slide-up delay-100">
+          La cuna del tenis regional donde pasión y deporte se unen
+        </p>
+        
+        <!-- Contadores/Estadísticas -->
+        <div class="flex flex-wrap justify-center gap-8 mb-12 animate-slide-up delay-200">
+          <div class="stat-item">
+            <div class="text-3xl md:text-4xl font-bold text-tennis-green">25+</div>
+            <div class="text-sm uppercase tracking-wider">Años de historia</div>
+          </div>
+          <div class="stat-item">
+            <div class="text-3xl md:text-4xl font-bold text-tennis-green">300+</div>
+            <div class="text-sm uppercase tracking-wider">Miembros activos</div>
+          </div>
+          <div class="stat-item">
+            <div class="text-3xl md:text-4xl font-bold text-tennis-green">15</div>
+            <div class="text-sm uppercase tracking-wider">Canchas</div>
+          </div>
+        </div>
+        
+        <!-- Botones mejorados -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4 animate-slide-up delay-300">
+          <a href="#membresias" class="btn-primary">
+            <i class="fas fa-user-plus mr-2"></i> Únete Ahora
+          </a>
+          <a href="#torneos" class="btn-secondary">
+            <i class="fas fa-trophy mr-2"></i> Próximos Torneos
+          </a>
+          <a href="#galeria" class="btn-outline">
+            <i class="fas fa-images mr-2"></i> Ver Galería
+          </a>
+        </div>
+      </div>
+      
+      <!-- Flecha de scroll down -->
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#nosotros" class="text-white text-2xl">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Estilos personalizados -->
+  <style>
+    /* Animaciones personalizadas */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideUp {
+      from { 
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to { 
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+      40% { transform: translateY(-20px) translateX(-50%); }
+      60% { transform: translateY(-10px) translateX(-50%); }
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    
+    .animate-slide-up {
+      animation: slideUp 0.8s ease-out forwards;
+    }
+    
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    
+    .animate-bounce {
+      animation: bounce 2s infinite;
+    }
+    
+    /* Estilos de botones */
+    .btn-primary {
+      background-color: #2ecc71; /* tennis-green */
+      color: white;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .btn-primary:hover {
+      background-color: #27ae60; /* tennis-green-dark */
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .btn-secondary {
+      background-color: white;
+      color: #2ecc71;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .btn-secondary:hover {
+      background-color: #f8f9fa;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+      padding: 10px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    .btn-outline:hover {
+      background-color: rgba(255,255,255,0.1);
+      transform: translateY(-3px);
+    }
+    
+    .stat-item {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(5px);
+      padding: 15px 25px;
+      border-radius: 12px;
+      min-width: 110px;
+    }
+  </style>
+    <!-- Features Section Mejorada -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <!-- Encabezado de sección -->
+      <div class="text-center mb-16">
+        <span class="inline-block px-4 py-1 bg-tennis-green/10 text-tennis-green rounded-full text-sm font-semibold mb-4">POR QUÉ ELEGIRNOS</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestras Ventajas Competitivas</h2>
+        <p class="max-w-2xl mx-auto text-gray-600 text-lg">Descubre lo que hace especial al Pucallpa Tenis Club</p>
+      </div>
+  
+      <!-- Grid de características -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Tarjeta 1 - Torneos -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3 class="feature-title">Torneos Mensuales</h3>
+          <p class="feature-description">Organizamos competencias regulares para todos los niveles con categorías desde principiantes hasta avanzados.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Sistema de ranking interno</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Premios y reconocimientos</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Ambiente competitivo sano</li>
+          </ul>
+        </div>
+  
+        <!-- Tarjeta 2 - Entrenadores -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3 class="feature-title">Entrenadores Certificados</h3>
+          <p class="feature-description">Nuestro equipo de profesionales cuenta con certificaciones internacionales.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Metodología moderna</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Planes personalizados</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Seguimiento de progreso</li>
+          </ul>
+        </div>
+  
+        <!-- Tarjeta 3 - Escuela Juvenil -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-child"></i>
+          </div>
+          <h3 class="feature-title">Escuela Juvenil</h3>
+          <p class="feature-description">Programas especializados para formar a las nuevas generaciones.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Desde 5 años</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Valores y disciplina</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Detección de talentos</li>
+          </ul>
+        </div>
+  
+        <!-- Tarjeta 4 - Instalaciones (nueva) -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-flag"></i>
+          </div>
+          <h3 class="feature-title">Instalaciones Premium</h3>
+          <p class="feature-description">Canchas mantenidas profesionalmente con superficie de última generación.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> 15 canchas profesionales</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Iluminación LED</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Vestuarios completos</li>
+          </ul>
+        </div>
+  
+        <!-- Tarjeta 5 - Comunidad (nueva) -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="feature-title">Vibrante Comunidad</h3>
+          <p class="feature-description">Más de 300 miembros activos que comparten tu pasión por el tenis.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Eventos sociales</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Interclubes</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Programa de padrinos</li>
+          </ul>
+        </div>
+  
+        <!-- Tarjeta 6 - Horarios (nueva) -->
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="feature-title">Horarios Flexibles</h3>
+          <p class="feature-description">Atención desde temprano hasta tarde para adaptarnos a tu rutina.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> 6:00 am - 10:00 pm</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Reservas online</li>
+            <li><i class="fas fa-check-circle text-tennis-green mr-2"></i> Paquetes especiales</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- CTA adicional -->
+      <div class="text-center mt-16">
+        <p class="text-lg text-gray-600 mb-6">¿Listo para vivir la experiencia Pucallpa Tenis Club?</p>
+        <a href="#membresias" class="inline-flex items-center px-8 py-3 bg-tennis-green text-white rounded-full font-semibold hover:bg-tennis-green-dark transition-all hover:scale-105">
+          <i class="fas fa-arrow-right mr-2"></i> Descubre nuestras membresías
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Estilos personalizados -->
+  <style>
+    .feature-card {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+  
+    .feature-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #2ecc71, #27ae60);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+  
+    .feature-card:hover::after {
+      transform: scaleX(1);
+    }
+  
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    .feature-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #2d3436;
+      margin-bottom: 12px;
+    }
+  
+    .feature-description {
+      color: #636e72;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+  
+    .feature-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    .feature-list li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      color: #636e72;
+    }
+  </style>
+  
+  
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <span class="inline-block px-4 py-1 bg-tennis-green/10 text-tennis-green rounded-full text-sm font-semibold mb-4">GALERÍA</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Vida en el Club</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto text-lg">Capturamos los momentos que hacen especial nuestra comunidad tenística</p>
+        </div>
+        
+        <!-- Filtros de Galería Mejorados -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+            <button class="px-5 py-2 bg-tennis-green text-white rounded-full font-medium filter-btn active transition-all hover:scale-105" data-filter="all">
+                <i class="fas fa-border-all mr-2"></i> Todo
+            </button>
+            <button class="px-5 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium filter-btn transition-all hover:scale-105" data-filter="canchas">
+                <i class="fas fa-map-marker-alt mr-2"></i> Canchas
+            </button>
+            <button class="px-5 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium filter-btn transition-all hover:scale-105" data-filter="torneos">
+                <i class="fas fa-trophy mr-2"></i> Torneos
+            </button>
+            <button class="px-5 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium filter-btn transition-all hover:scale-105" data-filter="entrenamientos">
+                <i class="fas fa-running mr-2"></i> Entrenamientos
+            </button>
+            <button class="px-5 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium filter-btn transition-all hover:scale-105" data-filter="eventos">
+                <i class="fas fa-glass-cheers mr-2"></i> Eventos
+            </button>
+            <button class="px-5 py-2 bg-gray-100 hover:bg-gray-200 rounded-full font-medium filter-btn transition-all hover:scale-105" data-filter="infantil">
+                <i class="fas fa-child mr-2"></i> Escuela Infantil
+            </button>
+        </div>
+        
+        <!-- Grid de Imágenes Mejorado -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 gallery-grid">
+            <!-- Imagen 1 - Canchas -->
+            <a href="#" class="gallery-item block relative group overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 canchas" data-category="canchas">
+                <img src="https://media.istockphoto.com/id/2023556247/es/foto/celebrate-pickleball-point.webp?a=1&b=1&s=612x612&w=0&k=20&c=NJBgRzv396h68liorJAmnPLiNxI3T-ycaMdPyBxQxJI=" 
+                     alt="Canchas de tenis" 
+                     class="w-full h-56 md:h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-white font-bold text-lg">Canchas Profesionales</h3>
+                    <p class="text-gray-200 text-sm">15 canchas con superficie de última generación</p>
+                    <div class="mt-2 flex items-center text-tennis-green">
+                        <i class="fas fa-camera mr-2"></i>
+                        <span class="text-xs text-gray-300">Ver más</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Imagen 2 - Torneos -->
+            <a href="#" class="gallery-item block relative group overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 torneos" data-category="torneos">
+                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1893&q=80" 
+                     alt="Torneo junior" 
+                     class="w-full h-56 md:h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-white font-bold text-lg">Torneo Junior 2023</h3>
+                    <p class="text-gray-200 text-sm">Más de 50 participantes en categorías sub-18</p>
+                    <div class="mt-2 flex items-center text-tennis-green">
+                        <i class="fas fa-camera mr-2"></i>
+                        <span class="text-xs text-gray-300">Ver más</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Imagen 3 - Entrenamientos -->
+            <a href="#" class="gallery-item block relative group overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 entrenamientos" data-category="entrenamientos">
+                <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                     alt="Entrenamiento" 
+                     class="w-full h-56 md:h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-white font-bold text-lg">Clases Personalizadas</h3>
+                    <p class="text-gray-200 text-sm">Entrenadores certificados por la FIT</p>
+                    <div class="mt-2 flex items-center text-tennis-green">
+                        <i class="fas fa-camera mr-2"></i>
+                        <span class="text-xs text-gray-300">Ver más</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Imagen 4 - Eventos -->
+            <a href="#" class="gallery-item block relative group overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 eventos" data-category="eventos">
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" 
+                     alt="Evento social" 
+                     class="w-full h-56 md:h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-white font-bold text-lg">Noche de Socios</h3>
+                    <p class="text-gray-200 text-sm">Evento anual de confraternización</p>
+                    <div class="mt-2 flex items-center text-tennis-green">
+                        <i class="fas fa-camera mr-2"></i>
+                        <span class="text-xs text-gray-300">Ver más</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Imagen 5 - Canchas -->
+            <a href="#" class="gallery-item block relative group overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 canchas" data-category="canchas">
+                <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                     alt="Canchas nocturnas" 
+                     class="w-full h-56 md:h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-white font-bold text-lg">Canchas Nocturnas</h3>
+                    <p class="text-gray-200 text-sm">Iluminación LED profesional hasta las 10pm</p>
+                    <div class="mt-2 flex items-center text-tennis-green">
+                        <i class="fas fa-camera mr-2"></i>
+                        <span class="text-xs text-gray-300">Ver más</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Imagen 6 - Torneos -->
+            <a href="#" class="gallery-item block relative group overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 torneos" data-category="torneos">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                     alt="Final de torneo" 
+                     class="w-full h-56 md:h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-white font-bold text-lg">Final Abierto 2023</h3>
+                    <p class="text-gray-200 text-sm">Gran final del torneo más importante del año</p>
+                    <div class="mt-2 flex items-center text-tennis-green">
+                        <i class="fas fa-camera mr-2"></i>
+                        <span class="text-xs text-gray-300">Ver más</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Imagen 7 - Escuela Infantil -->
+            <a href="#" class="gallery-item block relative group overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 infantil" data-category="infantil">
+                <img src="https://media.istockphoto.com/id/2033208749/es/foto/pareja-jugando-al-tenis-en-la-cancha.webp?a=1&b=1&s=612x612&w=0&k=20&c=Ecqhe7jxs0ryYrsFHRy7T8NEEf_nALPmoYPlnWsGfcU=" 
+                     alt="Entrenamiento juvenil" 
+                     class="w-full h-56 md:h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-white font-bold text-lg">Escuela Infantil</h3>
+                    <p class="text-gray-200 text-sm">Formando a los campeones del mañana</p>
+                    <div class="mt-2 flex items-center text-tennis-green">
+                        <i class="fas fa-camera mr-2"></i>
+                        <span class="text-xs text-gray-300">Ver más</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Imagen 8 - Eventos -->
+            <a href="#" class="gallery-item block relative group overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 eventos" data-category="eventos">
+                <img src="https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2089&q=80" 
+                     alt="Clínica de tenis" 
+                     class="w-full h-56 md:h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-white font-bold text-lg">Clínica para Principiantes</h3>
+                    <p class="text-gray-200 text-sm">Introducción al tenis para todas las edades</p>
+                    <div class="mt-2 flex items-center text-tennis-green">
+                        <i class="fas fa-camera mr-2"></i>
+                        <span class="text-xs text-gray-300">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Ver más mejorado -->
+        <div class="text-center mt-12">
+            <a href="#" class="inline-flex items-center px-6 py-3 bg-tennis-green text-white rounded-full font-semibold hover:bg-tennis-green-dark transition-all hover:scale-105 group">
+                Ver galería completa
+                <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Estilos adicionales -->
+<style>
+    .filter-btn.active {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    
+    .gallery-item {
+        transition: all 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+        transform: translateY(-5px);
+    }
+</style>
+
+<!-- Script para filtrado -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover clase active de todos los botones
+                filterButtons.forEach(btn => btn.classList.remove('active', 'bg-tennis-green', 'text-white'));
+                filterButtons.forEach(btn => btn.classList.add('bg-gray-100', 'hover:bg-gray-200'));
+                
+                // Añadir clase active al botón clickeado
+                button.classList.add('active', 'bg-tennis-green', 'text-white');
+                button.classList.remove('bg-gray-100', 'hover:bg-gray-200');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+    <!-- Lightbox Modal Mejorado -->
+<div id="lightbox" class="fixed inset-0 bg-black/95 z-[100] flex items-center justify-center hidden transition-opacity duration-300">
+    <div class="relative max-w-6xl w-full mx-4">
+        <!-- Botones de navegación -->
+        <button id="prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-12 h-12 flex items-center justify-center z-50 hover:bg-tennis-green transition-all">
+            <i class="fas fa-chevron-left text-xl"></i>
+        </button>
+        
+        <button id="next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-12 h-12 flex items-center justify-center z-50 hover:bg-tennis-green transition-all">
+            <i class="fas fa-chevron-right text-xl"></i>
+        </button>
+        
+        <!-- Botón de cerrar -->
+        <button id="close-lightbox" class="absolute -top-16 right-0 md:-right-16 text-white text-4xl z-50 hover:text-tennis-green transition-colors">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <!-- Contenedor de imagen -->
+        <div class="flex flex-col items-center">
+            <div class="relative w-full max-h-[80vh] overflow-hidden flex justify-center">
+                <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[80vh] object-contain rounded-lg transform transition-transform duration-300" loading="lazy">
+            </div>
+            
+            <!-- Controles inferiores -->
+            <div class="mt-6 flex flex-col items-center">
+                <div id="lightbox-caption" class="text-white text-lg font-medium text-center max-w-2xl px-4"></div>
+                <div id="lightbox-counter" class="text-gray-400 mt-2 text-sm"></div>
+                
+                <!-- Miniaturas (opcional) -->
+                <div id="lightbox-thumbnails" class="flex gap-2 mt-4 overflow-x-auto py-2 max-w-full px-4 hidden md:flex">
+                    <!-- Las miniaturas se generarán dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Estilos adicionales para el lightbox -->
+<style>
+    #lightbox {
+        backdrop-filter: blur(8px);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    #lightbox.show {
+        opacity: 1;
+    }
+    
+    #lightbox-thumbnails::-webkit-scrollbar {
+        height: 6px;
+    }
+    
+    #lightbox-thumbnails::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.1);
+        border-radius: 3px;
+    }
+    
+    #lightbox-thumbnails::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.3);
+        border-radius: 3px;
+    }
+    
+    #lightbox-thumbnails::-webkit-scrollbar-thumb:hover {
+        background: rgba(255,255,255,0.4);
+    }
+    
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .thumbnail:hover, .thumbnail.active {
+        opacity: 1;
+        border: 2px solid #2ecc71;
+    }
+</style>
+
+<!-- Script para el lightbox interactivo -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const lightboxCounter = document.getElementById('lightbox-counter');
+        const lightboxThumbnails = document.getElementById('lightbox-thumbnails');
+        const closeBtn = document.getElementById('close-lightbox');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        
+        // Obtener todas las imágenes de la galería
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        let currentIndex = 0;
+        
+        // Generar miniaturas
+        galleryItems.forEach((item, index) => {
+            const thumbnail = document.createElement('img');
+            thumbnail.src = item.querySelector('img').src;
+            thumbnail.classList.add('thumbnail');
+            thumbnail.dataset.index = index;
+            lightboxThumbnails.appendChild(thumbnail);
+            
+            thumbnail.addEventListener('click', () => {
+                updateLightbox(index);
+            });
+        });
+        
+        // Abrir lightbox al hacer clic en una imagen
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                currentIndex = index;
+                updateLightbox(currentIndex);
+                lightbox.classList.remove('hidden');
+                setTimeout(() => lightbox.classList.add('show'), 10);
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Cerrar lightbox
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('show');
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        });
+        
+        // Navegación
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            updateLightbox(currentIndex);
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            updateLightbox(currentIndex);
+        });
+        
+        // Navegación con teclado
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('hidden')) {
+                if (e.key === 'Escape') {
+                    closeBtn.click();
+                } else if (e.key === 'ArrowLeft') {
+                    prevBtn.click();
+                } else if (e.key === 'ArrowRight') {
+                    nextBtn.click();
+                }
+            }
+        });
+        
+        // Actualizar lightbox
+        function updateLightbox(index) {
+            const item = galleryItems[index];
+            const imgSrc = item.querySelector('img').src;
+            const caption = item.querySelector('h3')?.textContent || '';
+            
+            lightboxImg.src = imgSrc;
+            lightboxCaption.textContent = caption;
+            lightboxCounter.textContent = `${index + 1} / ${galleryItems.length}`;
+            
+            // Actualizar miniatura activa
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            lightboxThumbnails.children[index].classList.add('active');
+            
+            // Scroll suave a la miniatura activa
+            lightboxThumbnails.children[index].scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest',
+                inline: 'center'
+            });
+            
+            // Animación de entrada
+            lightboxImg.style.opacity = '0';
+            setTimeout(() => {
+                lightboxImg.style.opacity = '1';
+            }, 10);
+            
+            currentIndex = index;
+        }
+    });
+</script>
+
+    <!-- Script para filtros y lightbox -->
+    <script>
+        // Filtrado de imágenes
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Actualizar botones activos
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('bg-tennis-green', 'text-white'));
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.add('bg-gray-200', 'hover:bg-gray-300'));
+                btn.classList.add('bg-tennis-green', 'text-white');
+                btn.classList.remove('bg-gray-200', 'hover:bg-gray-300');
+                
+                const filter = btn.getAttribute('data-filter');
+                const items = document.querySelectorAll('.gallery-item');
+                
+                items.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            });
+        });
+        
+        // Lightbox
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const imgSrc = item.querySelector('img').getAttribute('src');
+                const imgAlt = item.querySelector('img').getAttribute('alt');
+                
+                document.getElementById('lightbox-img').setAttribute('src', imgSrc);
+                document.getElementById('lightbox-img').setAttribute('alt', imgAlt);
+                document.getElementById('lightbox-caption').textContent = imgAlt;
+                document.getElementById('lightbox').classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        document.getElementById('close-lightbox').addEventListener('click', () => {
+            document.getElementById('lightbox').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+    </script>
+
+    <!-- Instalaciones -->
+    <section id="instalaciones" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestras Instalaciones</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Canchas de Tenis" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Canchas Profesionales</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>5 canchas de arcilla (polvo de ladrillo)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>2 canchas de cemento rápido</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Iluminación LED para partidos nocturnos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Sistema de riego automático</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Instalaciones Complementarias" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Áreas Complementarias</h3>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Gimnasio completamente equipado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Sala de elongación y recuperación</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Cafetería con menú saludable</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Área social con terraza</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Estacionamiento privado</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#contacto" class="inline-block bg-tennis-green hover:bg-tennis-green-dark text-white px-6 py-3 rounded-lg font-medium transition hover-scale">
+                    <i class="fas fa-calendar-alt mr-2"></i> Reserva tu cancha ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Torneos -->
+    <section id="torneos" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Próximos Torneos</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Participa en nuestras competencias y demuestra tu talento en la cancha</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Torneo 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1893&q=80" alt="Torneo Junior" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-tennis-green text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Junior
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Torneo Junior Interclubes</h3>
+                            <span class="bg-gray-200 text-gray-800 text-xs px-2 py-1 rounded">12-18 años</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>15 Julio 2024</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Competencia para jóvenes promesas del tenis regional. Categorías sub-12, sub-14, sub-16 y sub-18.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-tennis-green font-medium">Inscripciones abiertas</span>
+                            <a href="#" class="text-tennis-green hover:text-tennis-green-dark font-medium">Más info →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Torneo 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Abierto de Pucallpa" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-tennis-blue text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Adultos
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Abierto de Pucallpa</h3>
+                            <span class="bg-gray-200 text-gray-800 text-xs px-2 py-1 rounded">+18 años</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>28 Agosto 2024</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>8:00 AM - 8:00 PM</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">El torneo más importante del año en la región. Categorías A, B y C según ranking.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 font-medium">Inscripciones desde 1/8</span>
+                            <a href="#" class="text-tennis-green hover:text-tennis-green-dark font-medium">Más info →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Torneo 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <div class="relative">
+                        <img src="https://media.istockphoto.com/id/2156461526/es/foto/jugadoras-de-f%C3%BAtbol-de-pie-en-grupo-con-la-pelota.webp?a=1&b=1&s=612x612&w=0&k=20&c=0mu1huuwYRyQnd3bHPRXC-o5mtMy9Npwd9kb_YWU09w=" alt="Torneo Familiar" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 right-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Familiar
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Torneo Familiar por Equipos</h3>
+                            <span class="bg-gray-200 text-gray-800 text-xs px-2 py-1 rounded">Todas las edades</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-3">
+                            <i class="far fa-calendar-alt mr-2"></i>
+                            <span>10 Septiembre 2024</span>
+                        </div>
+                        <div class="flex items-center text-gray-600 mb-4">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>10:00 AM - 4:00 PM</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Competencia por equipos familiares (padres e hijos). Diversión garantizada para todos.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-tennis-green font-medium">Inscripciones abiertas</span>
+                            <a href="#" class="text-tennis-green hover:text-tennis-green-dark font-medium">Más info →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-tennis-green text-tennis-green hover:bg-tennis-green hover:text-white px-6 py-3 rounded-lg font-medium transition hover-scale">
+                    <i class="fas fa-list mr-2"></i> Ver todos los torneos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entrenadores -->
+    <section id="entrenadores" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Nuestros Entrenadores</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Profesionales certificados con amplia experiencia en formación de jugadores</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Entrenador 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale text-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Entrenador Luis Ramírez" class="w-32 h-32 rounded-full mx-auto mt-8 border-4 border-tennis-green object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Luis Ramírez</h3>
+                        <span class="text-tennis-green text-sm font-medium">Director Técnico</span>
+                        <div class="flex justify-center mt-3 mb-4">
+                            <span class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Ex jugador profesional ATP. Especialista en técnica avanzada y preparación física.</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Entrenador 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale text-center">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Entrenadora María Fernández" class="w-32 h-32 rounded-full mx-auto mt-8 border-4 border-tennis-green object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">María Fernández</h3>
+                        <span class="text-tennis-green text-sm font-medium">Entrenadora Juvenil</span>
+                        <div class="flex justify-center mt-3 mb-4">
+                            <span class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Especialista en formación de niños y adolescentes. Metodología lúdica y progresiva.</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Entrenador 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale text-center">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Entrenador Carlos Gutiérrez" class="w-32 h-32 rounded-full mx-auto mt-8 border-4 border-tennis-green object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Carlos Gutiérrez</h3>
+                        <span class="text-tennis-green text-sm font-medium">Preparador Físico</span>
+                        <div class="flex justify-center mt-3 mb-4">
+                            <span class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Experto en acondicionamiento físico específico para tenistas y prevención de lesiones.</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Entrenador 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover-scale text-center">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Entrenadora Sofía Mendoza" class="w-32 h-32 rounded-full mx-auto mt-8 border-4 border-tennis-green object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-1">Sofía Mendoza</h3>
+                        <span class="text-tennis-green text-sm font-medium">Entrenadora de Competencia</span>
+                        <div class="flex justify-center mt-3 mb-4">
+                            <span class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">Especialista en táctica y preparación mental para competencias de alto nivel.</p>
+                        <div class="flex justify-center space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-tennis-green">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contacto" class="inline-block bg-tennis-green hover:bg-tennis-green-dark text-white px-6 py-3 rounded-lg font-medium transition hover-scale">
+                    <i class="fas fa-calendar-check mr-2"></i> Agenda una clase de prueba
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membresías -->
+    <section id="membresias" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Planes de Membresía</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Elige el plan que mejor se adapte a tus necesidades y comienza a disfrutar de todas nuestras instalaciones</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Plan Básico -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <div class="bg-gray-200 py-4 text-center">
+                        <h3 class="text-xl font-semibold">Plan Básico</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-tennis-green">S/ 150</span>
+                            <span class="text-gray-600">/mes</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Acceso a canchas 2 días por semana</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Uso del gimnasio</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>10% descuento en clases</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Participación en torneos sociales</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-2"></i>
+                                <span>Sin acceso a clases grupales</span>
+                            </li>
+                        </ul>
+                        <a href="#contacto" class="block w-full bg-gray-200 hover:bg-gray-300 text-gray-800 text-center py-3 rounded-lg font-medium transition">Seleccionar</a>
+                    </div>
+                </div>
+                
+                <!-- Plan Premium -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale transform scale-105 relative">
+                    <div class="absolute top-0 right-0 bg-tennis-green text-white text-xs font-bold px-3 py-1 transform translate-x-2 -translate-y-2">POPULAR</div>
+                    <div class="bg-tennis-green py-4 text-center text-white">
+                        <h3 class="text-xl font-semibold">Plan Premium</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-tennis-green">S/ 280</span>
+                            <span class="text-gray-600">/mes</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Acceso ilimitado a canchas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Uso del gimnasio y áreas comunes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>2 clases grupales por semana</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>20% descuento en clases privadas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Participación en todos los torneos</span>
+                            </li>
+                        </ul>
+                        <a href="#contacto" class="block w-full bg-tennis-green hover:bg-tennis-green-dark text-white text-center py-3 rounded-lg font-medium transition">Seleccionar</a>
+                    </div>
+                </div>
+                
+                <!-- Plan Familiar -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <div class="bg-gray-200 py-4 text-center">
+                        <h3 class="text-xl font-semibold">Plan Familiar</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-center mb-6">
+                            <span class="text-4xl font-bold text-tennis-green">S/ 450</span>
+                            <span class="text-gray-600">/mes</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Acceso ilimitado para 4 personas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Uso de todas las instalaciones</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>3 clases grupales por semana</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>25% descuento en clases privadas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-tennis-green mt-1 mr-2"></i>
+                                <span>Acceso prioritario a torneos familiares</span>
+                            </li>
+                        </ul>
+                        <a href="#contacto" class="block w-full bg-gray-200 hover:bg-gray-300 text-gray-800 text-center py-3 rounded-lg font-medium transition">Seleccionar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <p class="text-gray-600">¿Necesitas un plan personalizado? <a href="#contacto" class="text-tennis-green hover:underline">Contáctanos</a></p>
+            </div>
+        </div>
+    </section>
+
+  <!-- Sección de Contacto Alternativa -->
+<section class="contacto-moderno">
+    <div class="contenedor-contacto">
+      
+      <!-- Encabezado con efecto -->
+      <div class="encabezado-contacto">
+        <h2>¿Listo para comenzar?</h2>
+        <p class="subtitulo-destacado">Contáctanos hoy mismo</p>
+        <div class="linea-decorativa"></div>
+      </div>
+      
+      <div class="contenido-contacto">
+        <!-- Tarjetas de contacto flotantes -->
+        <div class="tarjetas-contacto">
+          <div class="tarjeta">
+            <div class="icono-circulo">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visítanos</h3>
+            <p>Calle Principal 456<br>Ciudad, País</p>
+          </div>
+          
+          <div class="tarjeta">
+            <div class="icono-circulo">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>Llámanos</h3>
+            <p>+1 234 567 890<br>Lunes a Viernes 9am-6pm</p>
+          </div>
+          
+          <div class="tarjeta">
+            <div class="icono-circulo">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Escríbenos</h3>
+            <p>hola@tudominio.com<br>soporte@tudominio.com</p>
+          </div>
+        </div>
+        
+        <!-- Formulario minimalista -->
+        <div class="formulario-contacto">
+          <form>
+            <div class="grupo-formulario">
+              <input type="text" placeholder="Nombre completo" required>
+            </div>
+            
+            <div class="grupo-formulario">
+              <input type="email" placeholder="Correo electrónico" required>
+            </div>
+            
+            <div class="grupo-formulario">
+              <input type="tel" placeholder="Teléfono (opcional)">
+            </div>
+            
+            <div class="grupo-formulario">
+              <textarea placeholder="Tu mensaje..." rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="boton-enviar">
+              Enviar Mensaje <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Redes sociales con hover effect -->
+      <div class="redes-modernas">
+        <p>Síguenos en redes sociales</p>
+        <div class="contenedor-redes">
+          <a href="#" class="red-social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="red-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="red-social"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="red-social"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="red-social"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Estilos para el diseño moderno -->
+  <style>
+    .contacto-moderno {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+      padding: 80px 0;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .contenedor-contacto {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .encabezado-contacto {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .encabezado-contacto h2 {
+      font-size: 2.8rem;
+      color: #2d3748;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .subtitulo-destacado {
+      font-size: 1.2rem;
+      color: #4a5568;
+      margin-bottom: 20px;
+    }
+    
+    .linea-decorativa {
+      width: 80px;
+      height: 4px;
+      background: #5bdb05;
+      margin: 0 auto;
+      border-radius: 2px;
+    }
+    
+    .contenido-contacto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+    
+    .tarjetas-contacto {
+      flex: 1;
+      min-width: 300px;
+      display: grid;
+      gap: 25px;
+    }
+    
+    .tarjeta {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+    
+    .tarjeta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    
+    .icono-circulo {
+      width: 70px;
+      height: 70px;
+      background: #ebf8ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: #5bdb05;
+      font-size: 24px;
+    }
+    
+    .tarjeta h3 {
+      color: #2d3748;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    
+    .tarjeta p {
+      color: #4a5568;
+      line-height: 1.6;
+    }
+    
+    .formulario-contacto {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+    
+    .grupo-formulario {
+      margin-bottom: 20px;
+    }
+    
+    .grupo-formulario input,
+    .grupo-formulario textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    
+    .grupo-formulario input:focus,
+    .grupo-formulario textarea:focus {
+      outline: none;
+      border-color: #5bdb05;
+    }
+    
+    .boton-enviar {
+      background: #5bdb05;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+    }
+    
+    .boton-enviar:hover {
+      background: #5bdb05;
+    }
+    
+    .redes-modernas {
+      text-align: center;
+    }
+    
+    .redes-modernas p {
+      color: #4a5568;
+      margin-bottom: 20px;
+    }
+    
+    .contenedor-redes {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+    .red-social {
+      width: 45px;
+      height: 45px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color:#5bdb05;
+      font-size: 18px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s;
+    }
+    
+    .red-social:hover {
+      color: white;
+      background:#5bdb05;
+      transform: translateY(-3px);
+    }
+    
+    @media (max-width: 768px) {
+      .encabezado-contacto h2 {
+        font-size: 2rem;
+      }
+      
+      .contenido-contacto {
+        flex-direction: column;
+      }
+    }
+  </style>
